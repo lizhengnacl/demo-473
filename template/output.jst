@@ -1,0 +1,25 @@
+<div class="output">
+    <div data-example-id="togglable-tabs">
+        <ul id="myTabs" class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#{{= it.sysId + 'd2'}}" id="output-home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">2D</a></li>
+            <li role="presentation" class=""><a href="#{{= it.sysId + 'd3'}}" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">3D</a></li>
+        </ul>
+        <div id="output-myTabContent" class="tab-content">
+            <div role="tabpanel" class="tab-pane fade active in" id="{{= it.sysId + 'd2'}}" aria-labelledby="output-home-tab">
+                {{= it}}
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                       <img src="../image/2d.jpg" class="img-responsive" alt="Image">
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="{{= it.sysId + 'd3'}}" aria-labelledby="profile-tab">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                       <img src="../image/3d.jpg" class="img-responsive" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

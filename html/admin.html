@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>中国数值水池系统</title>
+    <!-- Bootstrap CSS -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <link rel="stylesheet" type="text/css" href="../css/admin.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>求解器集成平台<small></small></h1>
+        </div>
+        <div id="system">
+            <div data-example-id="togglable-tabs">
+                <ul id="myTabs" class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#sys1" id="input-sys1-tab" role="tab" data-toggle="tab" aria-controls="sys1" aria-expanded="true">船舶快速性子系统</a>
+                    </li>
+                    <li role="presentation" class="">
+                        <a href="#sys2" role="tab" id="sys2-tab" data-toggle="tab" aria-controls="sys2" aria-expanded="false">螺旋桨空泡激振力子系统</a>
+                    </li>
+                    <li role="presentation" class="">
+                        <a href="#sys3" role="tab" id="sys3-tab" data-toggle="tab" aria-controls="sys3" aria-expanded="false">船舶耐波性子系统</a>
+                    </li>
+                    <li role="presentation" class="">
+                        <a href="#sys4" role="tab" id="sys4-tab" data-toggle="tab" aria-controls="sys4" aria-expanded="false">船舶操纵性子系统</a>
+                    </li>
+                    <li role="presentation" class="dropdown active" id="sys-dropdown">
+                        <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown" aria-controls="myTabDrop1-contents" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu" aria-labelledby="myTabDrop1" id="myTabDrop1-contents">
+                            <li class="active"><a href="#sys5" role="tab" id="sys5-tab" data-toggle="tab" aria-controls="sys5" aria-expanded="true">海洋环境流场子系统</a></li>
+                            <li><a href="#sys6" role="tab" id="sys6-tab" data-toggle="tab" aria-controls="sys6">海洋平台运动和载荷子系统</a></li>
+                            <li><a href="#sys7" role="tab" id="sys7-tab" data-toggle="tab" aria-controls="sys7">涡激振动/涡激运动子系统</a></li>
+                            <li><a href="#sys8" role="tab" id="sys8-tab" data-toggle="tab" aria-controls="sys8">船舶单项性能系列标模基准检验水池模型试验研究子系统</a></li>
+                            <li><a href="#sys9" role="tab" id="sys9-tab" data-toggle="tab" aria-controls="sys9">海洋工程系列标模水动力性能基准检验模型试验研究子系统</a></li>
+                            <li><a href="#sys10" role="tab" id="sys10-tab" data-toggle="tab" aria-controls="sys10">船舶与海洋工程大子样模型/实船试验数据子系统</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div id="input-myTabContent" class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade active in" id="sys1" aria-labelledby="input-sys1-tab">
+                        <div class="input">
+                            <div class="left">
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="input1" class="col-sm-3 control-label">船模阻力</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="input1" placeholder="用于提示输入数值类型,例如字符、数字等">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input2" class="col-sm-3 control-label">升沉</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="input2" placeholder="Input2">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input3" class="col-sm-3 control-label">纵倾</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="input3" placeholder="Input3">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input4" class="col-sm-3 control-label">自航因子</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="input4" placeholder="Input4">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input5" class="col-sm-3 control-label">收到功率</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="input5" placeholder="Input5">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input6" class="col-sm-3 control-label">船模绕流场</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="input6" placeholder="Input5">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-3 col-sm-9">
+                                            <button type="submit" class="btn btn-default">Sign in</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="right">
+                                <button type="button" class="btn btn-default btn-lg" keyValue="0">Scheme0</button>
+                                <button type="button" class="btn btn-default btn-lg" keyValue="1">Scheme1</button>
+                                <button type="button" class="btn btn-default btn-lg" keyValue="2">Scheme2</button>
+                                <button type="button" class="btn btn-default btn-lg" keyValue="3">Scheme3</button>
+                                <button type="button" class="btn btn-default btn-lg" keyValue="4">Scheme4</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="sys2" aria-labelledby="sys2-tab">
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade active in" id="sys3" aria-labelledby="sys3-tab"></div>
+                    <div role="tabpanel" class="tab-pane fade" id="sys4" aria-labelledby="sys4-tab"></div>
+                    <div role="tabpanel" class="tab-pane fade" id="sys5" aria-labelledby="sys5-tab"></div>
+                    <div role="tabpanel" class="tab-pane fade" id="sys6" aria-labelledby="sys6-tab"></div>
+                    <div role="tabpanel" class="tab-pane fade" id="sys7" aria-labelledby="sys7-tab"></div>
+                    <div role="tabpanel" class="tab-pane fade" id="sys8" aria-labelledby="sys8-tab"></div>
+                    <div role="tabpanel" class="tab-pane fade" id="sys9" aria-labelledby="sys9-tab"></div>
+                    <div role="tabpanel" class="tab-pane fade" id="sys10" aria-labelledby="sys10-tab"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/lib/require.js"></script>
+    <script type="text/javascript" src="../js/conf/requireConf.js"></script>
+    <script type="text/javascript" src="../js/page/admin.js"></script>
+</body>
+
+</html>

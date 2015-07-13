@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>中国数值水池系统</title>
+    <!-- Bootstrap CSS -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" id="header">
+            <div class="page-header">
+                <h1>中国数值水池系统</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                <div id="twoSys">
+                    <div class="panel panel-default clickColor" id="twoSys1">
+                        <div class="panel-body">求解器集成平台</div>
+                    </div>
+                    <div class="panel panel-default" id="twoSys2">
+                        <div class="panel-body">船舶海工平台查询系统</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                <div id="loginSys1">
+                    <div data-example-id="togglable-tabs">
+                        <ul id="myTabs" class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Admin</a>
+                            </li>
+                            <li role="presentation" class="">
+                                <a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">User</a>
+                            </li>
+                        </ul>
+                        <div id="myTabContent" class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
+                                <form class="form-signin" action="admin.html">
+                                    <label for="inputEmail" class="sr-only">Adminname</label>
+                                    <input type="text" id="inputEmail" class="form-control" placeholder="Adminname" required="" autofocus=true>
+                                    <label for="inputPassword" class="sr-only">Password</label>
+                                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="remember-me"> Remember me
+                                        </label>
+                                    </div>
+                                    <a class="btn btn-lg btn-primary btn-block" href="admin.html">Sign in</a>
+                                </form>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
+                                <form class="form-signin" action="admin.html">
+                                    <label for="inputEmail" class="sr-only">Username</label>
+                                    <input type="text" id="inputEmail" class="form-control" placeholder="Username" required="" autofocus=true>
+                                    <label for="inputPassword" class="sr-only">Password</label>
+                                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="remember-me"> Remember me
+                                        </label>
+                                    </div>
+                                    <a class="btn btn-lg btn-primary btn-block" href="pay.html">Sign in</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!-- requireJS -->
+    <script type="text/javascript" src="../js/lib/require.js"></script>
+    <script type="text/javascript" src="../js/conf/requireConf.js"></script>
+    <script type="text/javascript" src="../js/page/index.js"></script>
+</body>
+
+</html>

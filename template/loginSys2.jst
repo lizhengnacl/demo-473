@@ -1,0 +1,42 @@
+<div id="loginSys2">
+<div data-example-id="togglable-tabs">
+    <ul id="myTabs" class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active">
+            <a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Admin</a>
+        </li>
+        <li role="presentation" class="">
+            <a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">User</a>
+        </li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+        <div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
+            <form class="form-signin" action="admin.html">
+                <label for="inputEmail" class="sr-only">Adminname</label>
+                <input type="text" id="inputEmail" class="form-control" placeholder="Adminname" required="" autofocus=true>
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                </div>
+                <a class="btn btn-lg btn-primary btn-block" href="#">Sign in 2</a>
+            </form>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
+            <form class="form-signin" action="admin.html">
+                <label for="inputEmail" class="sr-only">Username</label>
+                <input type="text" id="inputEmail" class="form-control" placeholder="Username" required="" autofocus=true>
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                </div>
+                <a class="btn btn-lg btn-primary btn-block" href="admin.html">Sign in</a>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
